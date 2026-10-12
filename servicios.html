@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Karla's Vet</title>
+
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado y barra de navegación -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <h1>Karla's Vet</h1>
+      </div>
+      
+      <!-- Menú de navegación principal -->
+      <nav class="nav-menu">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="servicios.html" class="active">Servicios</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+
+      <!-- Panel con reloj y cambio de tema -->
+      <div class="header-widgets">
+        <span id="reloj-digital" class="reloj">00:00:00</span>
+        <button id="btn-theme" class="btn-theme" type="button">Modo Oscuro</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Catalogo completo de servicios -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios Veterinarios</h2>
+      <p class="section-subtitle">Ofrecemos cobertura médica y preventiva completa para la salud de tus mascotas.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Consulta General</h3>
+          <p>Revisiones clínicas preventivas, diagnósticos oportunos y seguimiento personalizado para cada paciente.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Vacunación y Desparasitación</h3>
+          <p>Esquemas biológicos completos para prevenir enfermedades infectocontagiosas en perros y gatos.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Estética Canina y Felina</h3>
+          <p>Servicio de baño, corte de pelo especializado, limpieza de oídos y cuidado de uñas.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Cirugía y Quimioterapia</h3>
+          <p>Procedimientos quirúrgicos con monitoreo de signos vitales e instalaciones quirúrgicas totalmente equipadas.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Laboratorio Clínico</h3>
+          <p>Análisis de sangre, orina y estudios coproparasitoscópicos para obtener resultados rápidos.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Hospitalización y Guardia</h3>
+          <p>Cuidado médico continuo para pacientes que requieran tratamiento intensivo o recuperación postoperatoria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Karla's Vet. Todos los derechos reservados.</p>
+      <p>Proyecto desarrollado para la Actividad 9.</p>
+    </div>
+  </footer>
+
+  <!-- Botón para regresar al inicio de la página -->
+  <button id="btn-ir-arriba" class="btn-ir-arriba" title="Volver arriba" type="button">Arriba</button>
+
+  <!-- Carga de jQuery y script general -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
