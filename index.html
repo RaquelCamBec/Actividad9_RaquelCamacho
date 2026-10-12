@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karla's Vet - Cuidado y Salud Animal</title>
+
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos del plugin bxSlider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado y barra de navegación -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <h1>Karla's Vet</h1>
+      </div>
+      
+      <!-- Menú de navegación principal -->
+      <nav class="nav-menu">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+
+      <!-- Panel con reloj y cambio de tema -->
+      <div class="header-widgets">
+        <span id="reloj-digital" class="reloj">00:00:00</span>
+        <button id="btn-theme" class="btn-theme" type="button">Modo Oscuro</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección de Inicio con el carrusel bxSlider -->
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <div class="bxslider">
+        <div class="slide slide-1">
+          <div class="slide-content">
+            <h2>Bienvenidos a Karla's Vet</h2>
+            <p>Atención médica profesional para el cuidado de tu mascota.</p>
+            <a href="#contacto" class="btn-primary">Agendar Cita</a>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="slide-content">
+            <h2>Tecnología e Instalaciones Modernas</h2>
+            <p>Diagnósticos precisos y seguimiento médico integral.</p>
+            <a href="servicios.html" class="btn-primary">Ver Servicios</a>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="slide-content">
+            <h2>Estética y Estancia Canina</h2>
+            <p>Brindamos la mejor atención a tus compañeros de vida.</p>
+            <a href="servicios.html" class="btn-primary">Conocer Más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Nosotros -->
+  <section id="nosotros" class="section dark-bg-alt">
+    <div class="container">
+      <h2 class="section-title">Sobre Nosotros</h2>
+      <p class="section-subtitle">Conoce nuestra trayectoria y compromiso con el bienestar animal.</p>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Comprometidos con la salud de tu mascota</h3>
+          <p>En Karla's Vet ofrecemos atención veterinaria integral desde hace más de diez años. Nuestro equipo está conformado por veterinarios altamente capacitados y comprometidos con brindar un trato cálido y ético.</p>
+        </div>
+      </div>
+
+      <!-- Preguntas frecuentes con efecto acordeón -->
+      <div class="accordion-container">
+        <h3>Preguntas Frecuentes</h3>
+        <div class="accordion-item">
+          <button class="accordion-header" type="button">¿Atienden emergencias durante la noche?</button>
+          <div class="accordion-body">
+            <p>Sí, contamos con servicio de guardia médica para atención de urgencias las 24 horas.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" type="button">¿Es necesario programar una cita para consulta general?</button>
+          <div class="accordion-body">
+            <p>Se recomienda agendar cita previa para brindarte una atención óptima y evitar tiempos de espera.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto y Ubicación -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2 class="section-title">Contacto y Ubicación</h2>
+      <p class="section-subtitle">Ponte en contacto con nosotros o visítanos en nuestra clínica.</p>
+
+      <div class="contact-grid">
+        <!-- Formulario de contacto con validación -->
+        <form id="form-contacto" class="contact-form" novalidate>
+          <div id="form-alerta" class="form-alerta"></div>
+
+          <div class="form-group">
+            <label for="nombre">Nombre Completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo Electrónico *</label>
+            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto *</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje">
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Enviar Mensaje</button>
+        </form>
+
+        <!-- Mapa interactivo de ubicación -->
+        <div class="mapa-container">
+          <h3>Ubicación de la Clínica</h3>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.8465053229605!2d-100.414000!3d20.675000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDQwJzMwLjAiTiAxMDDCsDI0JzUwLjQiVw!52e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx" 
+            width="100%" 
+            height="320" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Karla's Vet. Todos los derechos reservados.</p>
+      <p>Proyecto desarrollado para la Actividad 9.</p>
+    </div>
+  </footer>
+
+  <!-- Botón para regresar al inicio de la página -->
+  <button id="btn-ir-arriba" class="btn-ir-arriba" title="Volver arriba" type="button">Arriba</button>
+
+  <!-- Carga de jQuery, plugin bxSlider y scripts propios -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>
